@@ -23,8 +23,8 @@ matplotlibcpp  （用于绘图，由于调用的是python的绘图，因此需�
 add_message_files(
   FILES
   states.msg
-  # controls.msg
-  # test.msg
+  #controls.msg
+  #test.msg
 )
 再次执行：catkin_make
 然后注释如下:
@@ -32,7 +32,7 @@ add_message_files(
   FILES
   states.msg
   controls.msg
-  # test.msg
+  #test.msg
 )
 再次执行：catkin_make
 此时项目可以完全构建成功
