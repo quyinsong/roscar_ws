@@ -18,24 +18,24 @@ matplotlibcpp  （用于绘图，由于调用的是python的绘图，因此需�
 拷贝代码到本地文件夹：         git clone https://github.com/quyinsong/roscar_ws.git  
 在roscar_ws文件夹下运行：     catkin_make  
 
-构建可能遇到的问题：找不到自定义消息头文件，比如car_model/states.h，car_model/controls.h
-解决办法：打开car_model/CMakeList.txt文件,注释
-add_message_files(
-  FILES
-  states.msg
-  #controls.msg
-  #test.msg
-)
-再次执行：catkin_make
-然后注释如下:
-add_message_files(
-  FILES
-  states.msg
-  controls.msg
-  #test.msg
-)
-再次执行：catkin_make
-此时项目可以完全构建成功
+构建可能遇到的问题：找不到自定义消息头文件，比如car_model/states.h，car_model/controls.h  
+解决办法：打开car_model/CMakeList.txt文件,注释  
+add_message_files(  
+  FILES  
+  states.msg  
+  #controls.msg  
+  #test.msg  
+)  
+再次执行：catkin_make  
+然后注释如下:  
+add_message_files(  
+  FILES  
+  states.msg  
+  controls.msg  
+  #test.msg  
+)  
+再次执行：catkin_make  
+此时项目可以完全构建成功  
 
 # 3 配置环境变量  
 把当前工作空间的环境变量设置到bash中并source bashrc文件使其生效:  
