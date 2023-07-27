@@ -2,7 +2,7 @@
 ROS话题通信初探——基于NMPC的无人车定点控制
 
 0 项目结构
-src文件夹共包含三个功能包：
+src文件夹共包含三个功能包：  
 car_model： 用于构建小车模型，创建小车节点test_car_model
 myplot：    用于可视化小车运行状态，创建绘图节点test_plot
 controller：用于构建nmpc控制器，创建节点test_nmpc
