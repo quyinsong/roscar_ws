@@ -7,8 +7,8 @@ car_model： 用于构建小车模型，创建小车节点test_car_model
 myplot：    用于可视化小车运行状态，创建绘图节点test_plot  
 controller：用于构建nmpc控制器，创建节点test_nmpc  
 
-1 项目依赖  
-ros-noetic  
+1 项目依赖\  
+ros-noetic\  
 eigen3         （用于矩阵运算）  
 casadi3.6.3    （linux，C++版本，用于求解NLP问题）  
 matplotlibcpp  （用于绘图，由于调用的是python的绘图，因此需要安装python和相应的python绘图库）  
