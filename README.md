@@ -48,7 +48,7 @@ target_link_libraries(test_plot ${PYTHON_LIBRARIES})
 ## 找不到casadi头文件
 自行安装casadi，参考https://blog.csdn.net/qq_41701758/article/details/131527719?spm=1001.2014.3001.5501
 
-# 找不到matplotlibcpp头文件
+## 找不到matplotlibcpp头文件
 git clone https://github.com/lava/matplotlib-cpp\
 cp matplotlib-cpp/matplotlibcpp.h /usr/local/include/\
 
