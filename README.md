@@ -54,6 +54,5 @@ NMPC参数：在nmpc1.cpp中可修改惩罚矩阵Q和R的数值，m_Q和m_R
 设定期望点：在test_nmpc.cpp中可修改期望到达的位置，desired_states  
 
 # 6 本人联系方式  
-qu13298110549@163.com  
-
+***
 
