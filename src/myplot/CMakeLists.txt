@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(myplot)
 
-## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
-
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
@@ -28,6 +25,7 @@ include_directories(
 # 查找python库版本
 find_package(PythonLibs 3.8)
 
+
 # 指定头文件路径
 set(PYTHON3.8_INLCUDE_DIRS "/usr/include/python3.8")
 
@@ -35,6 +33,7 @@ set(PYTHON3.8_INLCUDE_DIRS "/usr/include/python3.8")
 include_directories(
     ${PYTHON3.8_INLCUDE_DIRS}
 )
+
 
 add_executable(test_plot ./src/test_plot.cpp ./src/comfun.cpp)
 target_link_libraries(test_plot ${catkin_LIBRARIES})
